@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  box-sizing: content-box;
+  margin: 0;
+  color: #333; /* Cambiado a un tono oscuro para mejorar la legibilidad del texto */
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 35, 102, 1) 0%,
+    rgba(30, 115, 176, 1) 47%,
+    rgba(0, 255, 242, 1) 100%
+  );
+  overflow: hidden;
+}
+
+#root {
+  border: 2px solid #ccc; /* Añadido un borde al contenedor principal */
+  padding: 10px; /* Aumentado el padding para separar el contenido del borde */
+  border-radius: 8px; /* Añadido un radio de borde para suavizar las esquinas */
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(5, 60px);
+  gap: 10px;
+  margin-top: 20px;
+
+  #button-AC,
+  #button-0 {
+    grid-column: span 2;
+  }
+
+  #button-equals {
+    grid-row: span 2;
+  }
+
+  .button {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #4ca3af;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #258a97;
+  }
+}
+
+.screenDiv {
+  min-height: 54px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border: 2px solid #000;
+  margin-top: 20px;
+}

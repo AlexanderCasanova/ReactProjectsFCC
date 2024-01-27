@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    box-sizing: content-box;
+    margin: 0;
+    color: #fff;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 35, 102, 1) 0%,
+      rgba(30, 115, 176, 1) 47%,
+      rgba(0, 255, 242, 1) 100%
+    );
+    overflow: hidden; /* Evitar que el fondo del gradiente se desplace */
+  }
+  
+  #root {
+    display: flex;
+  }
+  
+  #drum-machine {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo con opacidad */
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 10px;
+  }
+  
+  #display{
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    height: 100%; 
+    margin: 0;
+  }
+  .drum-pad {
+    background-color: rgba(255, 165, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .select {
+    height: 20px;
+    width: 60px;
+    background-color: rgba(255, 0, 0, 0.7); 
+    border: 2px solid #000;
+    position: relative;
+    border-radius: 5px; 
+  }
+  
+  .div-izq {
+    position: absolute;
+    left: 0;
+  }
+  
+  .div-rig {
+    position: absolute;
+    right: 0;
+  }
+  
+  #powerDiv,
+  #bankDiv {
+    height: 100%;
+    width: 50%;
+    background-color: rgba(255, 255, 0, 0.7); 
+    border-radius: 5px; 
+  }
+  
